@@ -1,39 +1,22 @@
-import { useState } from 'react';
+import { Routes, Route, Link } from "react-router-dom";
+import Login from "./login.jsx";
 import './App.css';
-import supabase from "./supabase-cliente";
 
-function App() {
-const [ userList, setUserList] = useState ([]);
-const [nome, setNome] = useState("");
+function App (){
+  return(
+<div> 
+ <nav>
 
-const addUser = async () => {
-  const newUserData = {
-    name: nome,
-};
+        <Link to="/login">Login</Link>
+      </nav>
 
-const {data,error} = await supabase
-.from("users")
-.insert([newUserData]);
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        
+      </Routes>
 
-if (error) {
-  console.error(error)
-}else{
-  setUserList ((prev) => [...prev,data]);
-  setNome("");
-  }
-};
-
-  return (
-<div>
-<input type = "text" 
-placeholder = "Digite seu nome aqui"
-onChange = {(e) => setNome(e.target.value)}/>
-
-<button on onClick={addUser}> Salvar valores</button> 
-
- <h1> Olá mundo</h1>
 </div>
   )
 }
 
-export default App
+export default App;
