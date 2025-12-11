@@ -1,0 +1,51 @@
+/* Fundo preto centralizado */
+.login-background {
+  height: 100vh;
+  width: 100%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card branco alinhado */
+.login-card {
+  background: #fff;
+  padding: 30px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Inputs */
+.login-input {
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%;
+}
+
+/* Título */
+.login-title {
+  margin: 0;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Botão preto */
+.login-button {
+  padding: 10px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+

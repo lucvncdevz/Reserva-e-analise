@@ -1,8 +1,8 @@
 import { Routes, Route, BrowserRouter, Link } from "react-router-dom";
-import Login from "./login.jsx";
-import Cadastro from "./cadastro.jsx";
-import Home from "./home.jsx";
-import Reserva from "./reserva.jsx";
+import Login from "./pages/login.jsx";
+import Cadastro from "./pages/cadastro.jsx";
+import Home from "./pages/home.jsx";
+import Reserva from "./pages/reserva.jsx";
 import "./index.css";
 
 function App() {
