@@ -1,0 +1,10 @@
+export default function SobreNos (){
+    return(
+<div> 
+    <h1>Sobre nos
+        
+    </h1>
+</div>
+
+    )
+}

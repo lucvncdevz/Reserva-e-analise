@@ -1,0 +1,55 @@
+/* faz a largura e altura do 
+elemento incluírem padding e 
+borda, evitando que ele aumente 
+além do tamanho definido.*/
+* { box-sizing: border-box; }
+
+.navbar {
+  width: 100%; 
+  height: 60px;
+  background-color: #0a1018;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;         /* espaçamento interno das laterais */
+  gap: 16px;
+  position:fixed;
+}
+
+/* se quiser centralizar o conteúdo em uma largura máxima */
+.navbar .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+/* marca à esquerda (opcional) */
+.brand {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* links (lado direito) */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  margin-left: auto; /* mantém os links à direita; remova se quiser centralizar */
+  align-items: center;
+}
+
+/* estilo do link */
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.nav-link:hover {
+  background: rgba(255,255,255,0.04);
+  text-decoration: none;
+}
